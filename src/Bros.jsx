@@ -1,22 +1,26 @@
 function Bros() {
+
+  const theme = extendTheme({
+    fonts: {
+      heading: "CustomFont, Edwardian Script ITC",
+      body: "CustomFont, Edwardian Script ITC",
+    },
+    styles: {
+      global: {
+        '@font-face': {
+          fontFamily: 'CustomFont',
+          src: `url(./font.ttf) format('truetype')`, 
+          fontWeight: 'normal',
+          fontStyle: 'normal',
+        },
+      },
+      body: {
+          fontSize: ['1rem', '1.2rem', '1.5rem'],
+        },
+  }});
     return (
         <p>si funcionas es porque eres dios </p>
     )
 }
-<Router>
-<h1>
-  Hola Gente, Bienvenidos
-</h1>
-<p>Quisiera que pudieran asistir a mi boda</p>
-<nav>
-  <ul>
-    <li><Link to={"/"}>Detalles</Link></li>
-    <li><Link to={"/fecha"}>Confirmacion</Link></li>
-  </ul>
-</nav>
-    <Routes>
-  <Route path="/" element={<Home/>}></Route>
-  <Route path="/fecha" element={<Date/>}></Route>
-</Routes>
-</Router>
+
 export default Bros;

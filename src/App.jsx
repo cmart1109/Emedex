@@ -2,12 +2,12 @@ import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom"
 import {ChakraProvider, Image, Box} from '@chakra-ui/react';
  import Home from "./Pages/Home"
  import Date from "./Pages/Date"
- import fondo from "../src/fondo.jpg"
- 
+ import fondo from "../src/Pictures/fondo.jpg"
+ import theme from "./theme"
 function App() {
 
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Box
       width={"100%"}
       height={"200vh"}

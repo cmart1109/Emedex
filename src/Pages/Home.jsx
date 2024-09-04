@@ -1,38 +1,81 @@
-import {ChakraProvider, Heading, Box, Card, Text} from '@chakra-ui/react';
+import {ChakraProvider, Heading, Box, Card, Text, Image, Flex} from '@chakra-ui/react';
 import fondo from "../../public/brg.png"
+import header from "../Pictures/header.jpg"
+import theme from "../theme"
+import ring from "../Pictures/ic1.png"
 
 function Home() {
     return (
-        <ChakraProvider>
-            <Box
+        <ChakraProvider theme={theme}>
+
+            <Flex
             display={"flex"}
             alignItems={"center"}
             flexDirection={"column"}
-            height={"100vh"}
             gap="4">
 
-
+  
             <Box 
-            m={2} 
+            m={6} 
             backgroundImage={`url(${fondo})`} 
             rounded={"md"} 
             boxShadow='dark-lg'
-            backgroundPosition={"center"} 
+            backgroundPosition={"bottom"}
+            backgroundSize={"cover"} 
+            width={"100%"}
             p='6'>
-            <Heading textAlign={['left', 'center']} size='lg' fontSize={'40px'} fontFamily="initial" alignContent={"center"}>Nuestro Para Siempre Comienza Hoy</Heading>
+            <Image 
+            mx={"auto"} 
+            src={ring}
+            boxSize={"70px"}
+            />
+            <Text textAlign={"center"}>Cordialmente les invitamos al:</Text>
+            <Heading textAlign={'center'} alignContent={"center"}>Matrimonio Martinez Garcia</Heading>
             </Box>
 
-            <Card
+            <Box
+            display={"flex"}
+            rounded={"md"} 
+            boxShadow='dark-lg'
             backgroundImage={`url(${fondo})`}
-            padding={"10px"}
-            height={"300px"}
-            width={"50%"}>
-                <Heading> Fecha</Heading>
+            width={"100%"}
+            height={"300px"}>
+                <Image 
+                src={header}
+                boxSize='300px'
+                />
+                <Box
+                m={6}
+                >
+                <Heading> Detalles</Heading>
                 <Text>
-                    Acompáñanos al Evento que cambiará nuestras vidas
+                    Estamos felices de anunciarles que Hemos decidido unirnos en matrimonio, 
+                    y deseamos que ustedes puedan ser participes de este
+                    importante evento en nuestras vidas. 
                 </Text>
-            </Card>
+                </Box>
             </Box>
+
+            <Box
+             m={6} 
+             backgroundImage={`url(${fondo})`} 
+             rounded={"md"} 
+             boxShadow='dark-lg'
+             backgroundPosition={"bottom"}
+             backgroundSize={"cover"} 
+             width={"100%"}
+             p='6'>
+                <Box
+                textAlign={"center"}>
+                    <Heading>Con la Querida Bendicion de nuestros Padres</Heading>
+                </Box>
+            </Box>
+
+
+
+
+
+            </Flex>
         </ChakraProvider>
     )
 }

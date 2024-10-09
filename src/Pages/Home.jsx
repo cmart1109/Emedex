@@ -1,75 +1,48 @@
-import {ChakraProvider, Heading, Box, Card, Text, Image, Flex} from '@chakra-ui/react';
-import fondo from "../../public/brg.png"
-import header from "../Pictures/header.jpg"
+import {ChakraProvider, Heading, Button, ButtonGroup, Box, Card, Text, Image, Grid, Flex} from '@chakra-ui/react';
 import theme from "../theme"
-import ring from "../Pictures/ic1.png"
+import ss1 from "../Pictures/screenshots/ss1.png"
+import ss2 from "../Pictures/screenshots/ss2.png"
+import ss3 from "../Pictures/screenshots/ss3.png"
+import ss4 from "../Pictures/screenshots/ss4.png"
+import cover from "../Pictures/miscelaneous/cover.jpeg"
+import bulbasaur from "../Pictures/icons/bulbasaur.gif"
 
 function Home() {
     return (
+        <div>
         <ChakraProvider theme={theme}>
 
             <Flex
             display={"flex"}
             alignItems={"center"}
             flexDirection={"column"}
-            gap="4">
+            gap={4}
+            m={6}>
+            
+            <Heading>
+            Pokemon Emerald    
+            </Heading>
 
-  
-            <Box 
-            m={6} 
-            backgroundImage={`url(${fondo})`} 
-            rounded={"md"} 
-            boxShadow='dark-lg'
-            backgroundPosition={"bottom"}
-            backgroundSize={"cover"} 
-            width={"100%"}
-            p='6'>
-            <Image 
-            mx={"auto"} 
-            src={ring}
-            boxSize={"70px"}
-            />
-            <Text textAlign={"center"}>Cordialmente les invitamos al:</Text>
-            <Heading textAlign={'center'} alignContent={"center"}>Matrimonio Martinez Garcia</Heading>
-            </Box>
+                <h2>Synopsis</h2>
+                <p>Pokémon Emerald is set in the region of Hoenn, where you play as a young Pokémon Trainer on a journey to become the Pokémon Champion. The story revolves around two villainous teams, Team Aqua and Team Magma, who seek to awaken the legendary Pokémon Kyogre and Groudon to reshape the world, either by expanding the oceans or increasing the landmass. However, their plans go awry, causing chaos in Hoenn’s climate.
+                Your character must stop these teams, with the help of the legendary Pokémon Rayquaza, who has the power to calm both Kyogre and Groudon. Along the way, you'll challenge eight Gym Leaders, defeat the Elite Four, and compete in the Battle Frontier, a new post-game challenge exclusive to Pokémon Emerald.
+                The game combines elements from Pokémon Ruby and Pokémon Sapphire while introducing new features, including updated graphics, improved battle mechanics, and an expanded storyline.</p>
+                <Grid templateColumns="repeat(2, 1fr)" gap={2}>
+                <Image src={ss1} alt='Screenshot 1'/>
+                <Image src={ss2} alt='Screenshot 1'/>
+                <Image src={ss3} alt='Screenshot 1'/>
+                <Image src={ss4} alt='Screenshot 1'/>
+                </Grid>
 
-            <Box
-            display={"flex"}
-            rounded={"md"} 
-            boxShadow='dark-lg'
-            backgroundImage={`url(${fondo})`}
-            width={"100%"}
-            height={"300px"}>
-                <Image 
-                src={header}
-                boxSize='300px'
-                />
-                <Box
-                m={6}
-                >
-                <Heading> Detalles</Heading>
-                <Text>
-                    Estamos felices de anunciarles que Hemos decidido unirnos en matrimonio, 
-                    y deseamos que ustedes puedan ser participes de este
-                    importante evento en nuestras vidas. 
-                </Text>
-                </Box>
-            </Box>
+                <h1>Cover</h1>
+                <Image src={cover} alt='Cartridge Cover'/>
+                <p>Release Date: 2004</p>
+                <Image src={bulbasaur}></Image>
 
-            <Box
-             m={6} 
-             backgroundImage={`url(${fondo})`} 
-             rounded={"md"} 
-             boxShadow='dark-lg'
-             backgroundPosition={"bottom"}
-             backgroundSize={"cover"} 
-             width={"100%"}
-             p='6'>
-                <Box
-                textAlign={"center"}>
-                    <Heading>Con la Querida Bendicion de nuestros Padres</Heading>
-                </Box>
-            </Box>
+                
+
+            
+
 
 
 
@@ -77,6 +50,7 @@ function Home() {
 
             </Flex>
         </ChakraProvider>
+        </div>
     )
 }
 

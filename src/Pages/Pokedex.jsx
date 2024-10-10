@@ -72,7 +72,7 @@ function Pokedex() {
 <Box
 align="center"
 alignContent="center"
-backgroundImage={background}>
+bgColor="darkgreen">
 <Box
 marginTop='5px'
 backgroundColor={'white'}

@@ -1,5 +1,5 @@
-id,name,type1,type2
-1,Bulbasaur,Grass,Poison
+id,name,type1,type2,image
+1,Bulbasaur,Grass,Poison,'../Pictures/icons/bulbasaur.gif'
 2,Ivysaur,Grass,Poison
 3,Venusaur,Grass,Poison
 4,Charmander,Fire,

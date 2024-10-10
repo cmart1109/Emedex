@@ -4,6 +4,7 @@ import {ChakraProvider, Image, Box, Button, Flex, ButtonGroup, Stack, Img} from 
 import Home from "./Pages/Home"
 import Pokedex from "./Pages/Pokedex"
 import theme from "./theme"
+import PokemonPage from "./Pages/PokemonPage";
 // Pictures ----------------------------------------------------------------------------------------
 import header from "./Pictures/backgrounds/header.jpg"
 import ic1 from "./Pictures/menu/home.png"
@@ -20,11 +21,9 @@ function App() {
     display='flex'
     alignItems='center'
     width='100%'
-    py={10}
     bgImage={header}
     bgPosition='center'
     bgRepeat='no-repeat'
-    mb={2}
   >
   <ButtonGroup gap={4} m='4'>
     <Button as={Link} to="/" fontSize='20' leftIcon={<img src={ic1} style={({ width:'64px', height:'64px'})}></img>} size='md' height='60px' width='180px' colorScheme="green">HOME</Button>
@@ -38,6 +37,7 @@ function App() {
 <Routes> 
   <Route path="/" element={<Home/>}></Route>
   <Route path="/Pokedex" element={<Pokedex/>}></Route>
+  <Route path="/pokemon/:name" element={<PokemonPage />}/>
 </Routes>
 </Router>  
 </ChakraProvider>

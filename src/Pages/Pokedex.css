@@ -1,0 +1,91 @@
+
+body {
+    background-color: greenyellow;
+}
+
+.grass {
+    background-color: lawngreen;
+    border-radius: 1cm;
+}
+
+.fire {
+    background-color: orange;
+    border-radius: 1cm;
+}
+
+.water {
+    background-color: dodgerblue;
+    border-radius: 1cm;
+}
+
+.poison { 
+    background-color: purple;
+    color: white;
+    border-radius: 1cm;
+}
+
+.normal {
+    background-color: lightgray;
+    border-radius: 1cm;
+}
+
+.bug {
+    border-radius: 1cm;
+    background-color: darkolivegreen;
+    color: white;
+}
+
+.ground {
+    background-color: peru;
+    border-radius: 1cm;
+}
+
+.rock {
+    background-color:saddlebrown;
+    color: white;
+    border-radius: 1cm;
+}
+
+.psychic {
+    background-color: pink;
+    border-radius: 1cm;
+}
+
+.flying {
+    background-color: lightblue;
+    border-radius: 1cm;
+}
+
+.electric { 
+    background-color: yellow;
+    border-radius: 1cm;
+}
+
+.ice {
+    background-color: aquamarine;
+    border-radius: 1cm;
+}
+
+.fighting {
+    background-color: red;
+    color: white;
+    border-radius: 1cm;
+}
+
+.ghost {
+    background-color: darkslateblue;
+    color: white;
+    border-radius: 1cm;
+}
+
+.dragon {
+    background-color: midnightblue;
+    color: white;
+    border-radius: 1cm;
+}
+
+.steel {
+    border-radius: 1cm;
+    background-color: gray;
+    color: white;
+}
